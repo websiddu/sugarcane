@@ -1,6 +1,8 @@
 {block:tumblrThemr}
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   <link rel="stylesheet" href="theme/styles/main.css" type="text/css" media="screen"/>
+
   <style type="text/css">{CustomCSS}</style>
 
   <div class="header">
@@ -44,7 +46,12 @@
           <div id="searchresults">No search results for {SearchQuery}</div>
         {/block:NoSearchResults}
       {/block:SearchPage}
+
+      <div class="pure-g">
+
+
       {block:Posts}
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
         <div class="post">
           {block:Photo}
             <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
@@ -86,7 +93,7 @@
           {/block:Quote}
           {block:Text}
             {block:Title}<div class="title">{Title}</div>{/block:Title}
-            <div class="copy">{Body}</div>
+            <div class="copy">{FakeBody}</div>
           {/block:Text}
           {block:Answer}
             <div class="question">
@@ -147,9 +154,9 @@
           </div>
           {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
         </div>
-        <div class="bottom"></div>
+      </div>
       {/block:Posts}
-
+</div>
       {block:Pagination}
         <div id="navigation">
           {block:PreviousPage}<a href="{PreviousPage}">&larr; {lang:Previous}</a>{/block:PreviousPage}
@@ -159,64 +166,6 @@
 
     </div>
 
-    <div id="sidebar">
-      <div id="top">
-        <div id="avatar"><a href="/"><img src="{PortraitURL-128}" /></a></div>
-        <div id="description">{Description}</div>
-
-        <div id="pages" class="ask_and_submit">
-          {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
-          {block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
-          <div class="clear"></div>
-        </div>
-
-        {block:HasPages}
-          <div id="pages">
-            {block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages}
-            <div class="clear"></div>
-          </div>
-        {/block:HasPages}
-
-        <div id="search">
-          <form action="/search" method="get" id="search-form">
-            <input type="hidden" name="t" value="{Name}" />
-            <input type="hidden" name="scope" value="all_of_tumblr" />
-            <input type="text" name="q" class="query" value="{SearchQuery}" />
-            <input type="submit" value="{lang:Search}" class="submit" />
-            <div class="clear"></div>
-          </form>
-        </div>
-        <div id="search-scope">
-          <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">{lang:My blog}</label>
-          <input type="radio" id="search-scope-all" name="scope">{lang:All of Tumblr}</label>
-        </div>
-        <a href="http://www.tumblr.com/follow/{PlaintextName}"><div class="heading" id="followontumblr">{lang:Follow on Tumblr}</div></a>
-        {block:Following}
-          <div class="heading" id="following">{lang:Following}</div>
-          <div class="content" id="following-avatars">
-            {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed}
-          </div>
-        {/block:Following}
-
-        <div id="buttons">
-          <div class="row">
-            <div class="button" id="button-rss"><a href="{RSS}">{lang:RSS feed}</a></div>
-            <div class="button" id="button-random"><a href="/random">{lang:Random}</a></div>
-          </div>
-          <div class="clear"></div>
-          <div class="row">
-            <div class="button" id="button-archive"><a href="/archive">{lang:Archive}</a></div>
-            <div class="button" id="button-mobile"><a href="/mobile">{lang:Mobile}</a></div>
-          </div>
-          <div class="clear"></div>
-        </div>
-
-      </div>
-
-      <div id="bottom"></div>
-      <div id="copyright">&copy; 2011 <a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a></div>
-    </div>
-    <div class="clear"></div>
   </div>
 
   </div>
