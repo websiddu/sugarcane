@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(#efefea, #fff);
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px; }
+
+.header {
+  width: 100%;
+  height: 71px;
+  position: fixed;
+  background-color: #434A54;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF434A54', endColorstr='#FF656D78');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0%, #434a54), color-stop(100%, #656d78));
+  background-image: -webkit-linear-gradient(left, #434a54 0, #656d78 100%);
+  background-image: linear-gradient(to right, #434a54 0, #656d78 100%);
+  overflow: hidden; }
+  .header:after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #967ADC;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF967ADC', endColorstr='#FFAC92EC');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0%, #967adc), color-stop(100%, #ac92ec));
+    background-image: -webkit-linear-gradient(left, #967adc 0, #ac92ec 100%);
+    background-image: linear-gradient(to right, #967adc 0, #ac92ec 100%);
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+
+.home-menu {
+  margin: 0 auto;
+  max-width: 70em; }
+
+.brand {
+  overflow: hidden;
+  float: left;
+  display: inline-block; }
+  .brand img {
+    max-width: 40px;
+    max-height: 50px;
+    margin: 10px; }
+
+.main-content {
+  padding-top: 100px;
+  max-width: 70em;
+  margin: 0 auto; }
+
+.home-menu-links {
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style-type: none; }
+  .home-menu-links li {
+    display: inline-block;
+    position: relative; }
+    .home-menu-links li:hover a:after {
+      content: '';
+      display: block;
+      background: rgba(0, 0, 0, 0.22);
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 20px;
+      bottom: 20px;
+      border-radius: 5px;
+      z-index: 1; }
+    .home-menu-links li a {
+      display: inline-block;
+      padding: 0 23.33px;
+      line-height: 70px;
+      background: 0 0;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px; }
+
+.page-footer {
+  padding: 15px 10px;
+  background-color: #434A54;
+  background: linear-gradient(left, #434A54 0%, #656D78 100%); }
+
+/*# sourceMappingURL=main.css.map */
