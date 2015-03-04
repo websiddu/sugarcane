@@ -116,9 +116,17 @@ $g3-color2: #AC92EC;
   border: 8px solid #fff;
   margin: 20px;
   box-shadow: 0 2px 5px #d8d8d8;
+
   p {
     margin: 0;
   }
+  &:hover {
+    .title {
+      transition: bottom 0.4s cubic-bezier(.53,.12,.18,.72);
+      bottom: -8px;
+    }
+  }
+
   .title {
     background: #fff;
     font-size: 18px;
@@ -127,17 +135,19 @@ $g3-color2: #AC92EC;
     padding: 12px 10px;
     left: 0;
     right: 0;
-    bottom: -8px;
+    bottom: -60px;
     text-shadow: 0 0 3px #fff;
     height: 87px;
     color: #43434a;
     margin: 0;
+    transition: bottom 0.5s cubic-bezier(0.1, 0.82, 0.25, 1);
   }
   img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0;
+    max-height: 270px;
   }
 }
 
