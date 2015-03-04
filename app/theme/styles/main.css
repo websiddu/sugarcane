@@ -90,6 +90,7 @@ body {
   cursor: pointer;
   border: 8px solid #fff;
   margin: 20px;
+  display: block;
   box-shadow: 0 2px 5px #d8d8d8; }
   .post p {
     margin: 0; }

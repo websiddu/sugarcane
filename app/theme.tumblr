@@ -16,9 +16,6 @@
             <a href="http://websiddu.com/">home</a>
           </li>
           <li>
-            <a href="http://websiddu.com/#/portfolio" target="_blank">portfolio</a>
-          </li>
-          <li>
             <a href="http://websiddu.com/#/about" target="_blank">about</a>
           </li>
 
@@ -52,7 +49,7 @@
 
       {block:Posts}
       <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-        <div class="post">
+        <a class="post" href="{Permalink}">
           {block:Photo}
             <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
             {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
@@ -92,8 +89,14 @@
             </div>
           {/block:Quote}
           {block:Text}
-            {block:Title}<div class="title">{Title}</div>{/block:Title}
             <div class="copy">{FakeBody}</div>
+            {block:Title}
+              <div class="title">
+                {Title}
+                <br>
+                <small> likes </small>
+              </div>
+            {/block:Title}
           {/block:Text}
           {block:Answer}
             <div class="question">
@@ -153,7 +156,7 @@
             <div class="clear"></div>
           </div>
           {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
-        </div>
+        </a>
       </div>
       {/block:Posts}
 </div>
