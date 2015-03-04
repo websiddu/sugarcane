@@ -20,6 +20,7 @@ body {
   background-image: -webkit-linear-gradient(left, #434a54 0, #656d78 100%);
   background-image: linear-gradient(to right, #434a54 0, #656d78 100%);
   overflow: hidden;
+  z-index: 1000;
   &:after {
     content: '';
     display: block;
@@ -107,5 +108,37 @@ $g3-color2: #AC92EC;
   background: linear-gradient(left, $g2-color1 0%, $g2-color2 100%);
 }
 
+
+.post {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 8px solid #fff;
+  margin: 20px;
+  box-shadow: 0 2px 5px #d8d8d8;
+  p {
+    margin: 0;
+  }
+  .title {
+    background: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    padding: 12px 10px;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    text-shadow: 0 0 3px #fff;
+    height: 87px;
+    color: #43434a;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+}
 
 
