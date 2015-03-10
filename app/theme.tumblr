@@ -90,7 +90,9 @@
             </div>
           {/block:Quote}
           {block:Text}
-            <div class="cont">{FakeBody}</div>
+            <a href="{Permalink}" class="cont-link">
+              <div class="cont">{FakeBody}</div>
+            </a>
             {block:Title}
               <div class="title">
                 <a href="{Permalink}">

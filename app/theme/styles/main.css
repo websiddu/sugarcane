@@ -98,6 +98,11 @@ body {
     margin: 0; }
   .post .cont {
     height: 270px; }
+  .post .cont-link {
+    display: block;
+    text-decoration: none; }
+  .post .cont-link:hover + .title a {
+    color: #DA4453; }
   .post .title {
     background: #fff;
     font-size: 18px;

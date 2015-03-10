@@ -133,6 +133,14 @@ $g3-color2: #AC92EC;
   .cont {
     height: 270px;
   }
+  .cont-link {
+    display: block;
+    text-decoration: none;
+  }
+
+  .cont-link:hover + .title a {
+    color: #DA4453;
+  }
 
   .title {
     background: #fff;
