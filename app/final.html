@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> {block:Description}
+  <meta name="description" content="{MetaDescription}" /> {/block:Description}
+  <title>{block:TagPage}{Tag} posts - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}"> {block:Hidden}
+  <meta name="color:Menu bar background" content="#fff" />
+  <meta name="color:Menu bar text color" content="#222" />
+  <meta name="if:Transparent menu bar" content="0" />
+  <meta name="if:Bold title" content="0" />
+  <meta name="image:Background image" content="" />
+  <meta name="select:Body font" content="Cabin" title="Cabin">
+  <meta name="select:Body font" content="Source Sans Pro" title="Source Sans Pro">
+  <meta name="select:Body font" content="Droid Serif" title="Droid Serif">
+  <meta name="select:Body font" content="Lato" title="Lato">
+  <meta name="select:Body font" content="Vollkorn" title="Volkorn">
+  <meta name="select:Body font" content="Merriweather" title="Merriweather">
+  <meta name="select:Body font" content="PT Sans" title="PT Sans">
+  <meta name="select:Body font" content="Roboto Slab" title="Roboto Slab">
+  <meta name="select:Body font" content="Raleway" title="Raleway">
+  <meta name="select:Body font" content="Varela" title="Varela">
+  <meta name="select:Body font" content="Varela Round" title="Varela Round">
+  <meta name="select:Body font" content="Open Sans" title="Open Sans">
+  <meta name="select:Body font" content="Arial" title="Arial">
+  <meta name="select:Body font" content="Georgia" title="Georgia">
+  <meta name="select:Header font" content="Open Sans" title="Open Sans">
+  <meta name="select:Header font" content="Source Sans Pro" title="Source Sans Pro">
+  <meta name="select:Header font" content="Cabin" title="Cabin">
+  <meta name="select:Header font" content="Droid Serif" title="Droid Serif">
+  <meta name="select:Header font" content="Lato" title="Lato">
+  <meta name="select:Header font" content="Vollkorn" title="Volkorn">
+  <meta name="select:Header font" content="Merriweather" title="Merriweather">
+  <meta name="select:Header font" content="PT Sans" title="PT Sans">
+  <meta name="select:Header font" content="Roboto Slab" title="Roboto Slab">
+  <meta name="select:Header font" content="Raleway" title="Raleway">
+  <meta name="select:Header font" content="Varela" title="Varela">
+  <meta name="select:Header font" content="Varela Round" title="Varela Round">
+  <meta name="select:Header font" content="Arial" title="Arial">
+  <meta name="select:Header font" content="Georgia" title="Georgia">
+  <meta name="select:Pattern style" content="" title="None">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/wAbmwf0gp/squairy.png" title="Squairy">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/exAmwf0he/p5.png" title="P5">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/xplmwf0ia/worn_dots.png" title="Worn Dots">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/rdPmwf0j3/first_aid_kit.png" title="First Aid Kit">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/AF2mwf0jt/debut_dark.png" title="Debut Dark">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/7vTmwf0kl/dark_fish_skin.png" title="Dark Fish Skin">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/n0Smwf0lh/dark_geometric.png" title="Dark Geometric">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/3Nbmwf0m8/classy_fabric.png" title="Classy Fabric">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/M3rmwf0mw/gplaypattern.png" title="Gplay">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/GPWmwf0ni/arches.png" title="Arches">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/LdMmwf0o5/plaid.png" title="My Little Plaid">
+  <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/chcmwf0p3/subtle_zebra_3d.png" title="Subtle Zebra">
+  <meta name="select:Layout type" content="three-col" title="3 Columns">
+  <meta name="select:Layout type" content="two-col" title="2 Columns">
+  <meta name="select:Layout type" content="one-col" title="1 Column">
+  <meta name="text:Menu footer text" content="" />
+  <meta name="text:Website link" content="" />
+  <meta name="text:Shop link" content="" />
+  <meta name="text:Facebook link" content="" />
+  <meta name="text:Twitter link" content="" />
+  <meta name="text:Google Plus link" content="" />
+  <meta name="text:Youtube link" content="" />
+  <meta name="text:Vimeo link" content="" />
+  <meta name="text:Pinterest link" content="" />
+  <meta name="text:Dribbble link" content="" />
+  <meta name="text:Instagram link" content="" />
+  <meta name="text:SoundCloud link" content="" />
+  <meta name="text:Spotify link" content="" />
+  <meta name="text:LinkedIn link" content="" />
+  <meta name="text:Flickr link" content="" />
+  <meta name="text:Medium link" content="" />
+  <meta name="text:Vine link" content="" />
+  <meta name="text:Picasa link" content="" />
+  <meta name="text:GitHub link" content="" />
+  <meta name="text:LastFm link" content="" />
+  <meta name="text:Blogger link" content="" />
+  <meta name="text:Google Analytics ID" content="" />
+  <meta name="text:Extra Scripts" content="" /> {/block:Hidden}
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <style>
+  body {
+    background: linear-gradient(#efefea, #fff);
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .pure-g [class*="pure-u"] {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .header {
+    width: 100%;
+    height: 71px;
+    position: fixed;
+    background-color: #434A54;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF434A54', endColorstr='#FF656D78');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0%, #434a54), color-stop(100%, #656d78));
+    background-image: -webkit-linear-gradient(left, #434a54 0, #656d78 100%);
+    background-image: linear-gradient(to right, #434a54 0, #656d78 100%);
+    overflow: hidden;
+    z-index: 1000;
+  }
+  .header:after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #967ADC;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF967ADC', endColorstr='#FFAC92EC');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 50%, 100% 50%, color-stop(0%, #967adc), color-stop(100%, #ac92ec));
+    background-image: -webkit-linear-gradient(left, #967adc 0, #ac92ec 100%);
+    background-image: linear-gradient(to right, #967adc 0, #ac92ec 100%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .home-menu {
+    margin: 0 auto;
+    max-width: 70em;
+  }
+  .brand {
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+  }
+  .brand img {
+    max-width: 40px;
+    max-height: 50px;
+    margin: 10px;
+  }
+  .main-content {
+    padding-top: 100px;
+    max-width: 70em;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    min-height: 700px;
+  }
+  .home-menu-links {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+  }
+  .home-menu-links li {
+    display: inline-block;
+    position: relative;
+  }
+  .home-menu-links li:hover a:after {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.22);
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .home-menu-links li a {
+    display: inline-block;
+    padding: 0 23.33px;
+    line-height: 70px;
+    background: 0 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .page-footer {
+    padding: 15px 10px;
+    height: 40px;
+    background-color: #434A54;
+    background: linear-gradient(left, #434A54 0%, #656D78 100%);
+  }
+  .post {
+    position: relative;
+    overflow: hidden;
+    border: 8px solid #fff;
+    margin: 20px;
+    display: block;
+    box-shadow: 0 2px 5px #d8d8d8;
+  }
+  .post p {
+    margin: 0;
+  }
+  .post .cont {
+    height: 270px;
+  }
+  .post .cont-link {
+    display: block;
+    text-decoration: none;
+  }
+  .post .cont-link:hover + .title a {
+    color: #DA4453;
+  }
+  .post .title {
+    background: #fff;
+    font-size: 18px;
+    position: absolute;
+    padding: 12px 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-shadow: 0 0 3px #fff;
+    height: 46px;
+    color: #43434a;
+    margin: 0;
+    transition: bottom 0.5s cubic-bezier(0.1, 0.82, 0.25, 1);
+  }
+  .post .title a {
+    text-decoration: none;
+    color: #43434a;
+    font-weight: 500;
+  }
+  .post .title a:hover {
+    color: #DA4453;
+  }
+  .post .stats {
+    position: absolute;
+    bottom: 10px;
+    left: 11px;
+    display: inline-block;
+    color: #888;
+  }
+  .post .stats:hover {
+    color: #DA4453;
+  }
+  .post .date {
+    float: left;
+    margin-right: 20px;
+  }
+  .post .notes {
+    float: left;
+  }
+  .post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    max-height: 270px;
+  }
+  .navigation .next,
+  .navigation .prev {
+    float: right;
+    min-width: 150px;
+    padding: 15px 20px;
+    color: #6D6D79;
+    font-weight: 500;
+    text-align: right;
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .navigation .next:hover,
+  .navigation .prev:hover {
+    background: #f8f8f8;
+    border-radius: 5px;
+  }
+  .navigation .prev {
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+  }
+  /*# sourceMappingURL=main.css.map */
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="home-menu">
+      <a href="/" class="brand">
+        <img src="http://websiddu.com/images/brand_2.svg" alt="Siddhartha Gudipati {Title}" class="">
+      </a>
+
+      <ul class="right home-menu-links">
+        <li>
+          <a href="http://websiddu.com/">home</a>
+        </li>
+        <li>
+          <a href="http://websiddu.com/#/about" target="_blank">about</a>
+        </li>
+
+        <li>
+          <a href="http://blog.websiddu.com" target="_blank">blog</a>
+        </li>
+        <li>
+          <a href="http://websiddu.com/#/contact">contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <div id="wrapper">
+      <div id="content">
+        {block:SearchPage} {block:SearchResults}
+        <div id="searchresults">{SearchResultCount} results for {SearchQuery}</div>
+        {/block:SearchResults} {block:NoSearchResults}
+        <div id="searchresults">No search results for {SearchQuery}</div>
+        {/block:NoSearchResults} {/block:SearchPage}
+
+        <div class="pure-g">
+
+
+          {block:Posts}
+          <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+            <div class="post" href="{Permalink}">
+              {block:Photo}
+              <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+              {block:Caption}
+              <div class="copy">{Caption}</div>{/block:Caption} {/block:Photo} {block:Video}
+              <div class="media">{Video-500}</div>
+              {block:Caption}
+              <div class="copy">{Caption}</div>{/block:Caption} {/block:Video} {block:Audio} {block:AlbumArt}
+              <div class="album_art">
+                <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" style="margin-bottom:10px;" />
+              </div>
+              {/block:AlbumArt}
+              <div class="audio">
+                <div class="player">{AudioPlayerWhite}</div>
+                <div class="meta">{PlayCountWithLabel}{block:ExternalAudio}<span class="download_external_audio"> &bull; <a href="{ExternalAudioURL}">{lang:Download}</a></span>{/block:ExternalAudio}</div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+              {block:Caption}
+              <div class="copy">{Caption}</div>{/block:Caption} {/block:Audio} {block:Quote}
+              <div class="quote {Length}">{Quote}</div>
+              <div class="copy">
+                <div class="quotebg">“</div>
+                {block:Source}
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" style="width:20px;">&mdash;</td>
+                    <td valign="top" class="quote_source">
+                      {Source}
+                    </td>
+                  </tr>
+                </table>
+                {/block:Source}
+              </div>
+              {/block:Quote} {block:Text}
+              <a href="{Permalink}" class="cont-link">
+                <div class="cont">{FakeBody}</div>
+              </a>
+              {block:Title}
+              <div class="title">
+                <a href="{Permalink}">
+                  {Title}
+                </a>
+              </div>
+              {/block:Title} {/block:Text} {block:Answer}
+              <div class="question">
+                <div class="nipple"></div>
+                {Question}
+              </div>
+              <div class="asker_container"><img src="{AskerPortraitURL-24}">{Asker}</div>
+              <div class="copy">{Answer}</div>
+              {/block:Answer} {block:Chat} {block:Title}
+              <div class="title">{Title}</div>{/block:Title}
+              <div class="chat">
+                <div class="lines">
+                  {block:Lines}
+                  <div class="line {Alt}">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>
+                  {/block:Lines}
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div style="height:10px;"></div>
+              {/block:Chat} {block:Link}
+              <div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a>
+              </div>
+              {block:Description}
+              <div class="copy">{Description}</div>{/block:Description} {/block:Link}
+              <a class="stats" href="{Permalink}">
+                <span class="date">
+            {block:Date} Posted {TimeAgo} {/block:Date}
+          </span>
+                <span class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</span>
+              </a>
+
+              <!--
+          <a href="{Permalink}">
+            <div class="footer for_permalink">
+              <div class="date">
+                {block:Reblog}
+                Reblogged {TimeAgo} from {ReblogParentName}
+                {block:RebloggedFromReblog}(<span style="text-transform:lowercase;">Originally from {ReblogRootName}</span>){/block:RebloggedFromReblog}
+                {/block:Reblog}
+                &nbsp;
+                {block:Date}
+                Posted {TimeAgo} from {source}
+                {/block:Date}
+              </div>
+              <div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</div>
+              <div class="clear"></div>
+            </div>
+          </a>
+
+          <div class="footer {block:ContentSource}with_source_url{/block:ContentSource}" style="
+            display: none;
+            {block:HasTags}display:block;{/block:HasTags}
+            {block:ContentSource}display:block;{/block:ContentSource}
+          ">
+            {block:HasTags}<div class="tags">{lang:Tagged}: {block:Tags}<a href="{TagURL}">{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div>{/block:HasTags}
+
+            {block:ContentSource}
+              <a href="{SourceURL}" class="source_url">
+                {lang:Source}:
+                {SourceTitle}
+              </a>
+            {/block:ContentSource}
+            <div class="clear"></div>
+          </div>
+           {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes} -->
+            </div>
+          </div>
+          {/block:Posts}
+        </div>
+
+        {block:Pagination}
+        <div class="navigation">
+          {block:PreviousPage}<a href="{PreviousPage}" class="prev">&larr; {lang:Previous}</a>{/block:PreviousPage} {block:NextPage}
+          <a href="{NextPage}" class="next">{lang:Next page} &rarr;</a>{/block:NextPage}
+        </div>
+        {/block:Pagination}
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="page-footer">
+
+  </div>
+
+</body>
+
+</html>
