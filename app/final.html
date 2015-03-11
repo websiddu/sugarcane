@@ -280,69 +280,77 @@
 <body>
 
   <div class="header">
-    <div class="home-menu">
-      <a href="/" class="brand">
-        <img src="http://websiddu.com/images/brand_2.svg" alt="Siddhartha Gudipati {Title}" class="">
-      </a>
+      <div class="home-menu">
+        <a href="/" class="brand">
+          <img src="http://websiddu.com/images/brand_2.svg" alt="Siddhartha Gudipati {Title}" class="">
+        </a>
 
-      <ul class="right home-menu-links">
-        <li>
-          <a href="http://websiddu.com/">home</a>
-        </li>
-        <li>
-          <a href="http://websiddu.com/#/about" target="_blank">about</a>
-        </li>
+        <ul class="right home-menu-links">
+          <li>
+            <a href="http://websiddu.com/">home</a>
+          </li>
+          <li>
+            <a href="http://websiddu.com/#/about" target="_blank">about</a>
+          </li>
 
-        <li>
-          <a href="http://blog.websiddu.com" target="_blank">blog</a>
-        </li>
-        <li>
-          <a href="http://websiddu.com/#/contact">contact</a>
-        </li>
-      </ul>
+<!--           <li>
+            <a href="http://blog.websiddu.com" target="_blank">blog</a>
+          </li>
+          <li>
+            <a href="http://websiddu.com/#/contact">contact</a>
+          </li>
+ -->        </ul>
 
-    </div>
+      </div>
   </div>
 
   <div class="main-content">
 
-    <div id="wrapper">
-      <div id="content">
-        {block:SearchPage} {block:SearchResults}
-        <div id="searchresults">{SearchResultCount} results for {SearchQuery}</div>
-        {/block:SearchResults} {block:NoSearchResults}
-        <div id="searchresults">No search results for {SearchQuery}</div>
-        {/block:NoSearchResults} {/block:SearchPage}
+  <div id="wrapper">
+    <div id="content">
+      {block:SearchPage}
+        {block:SearchResults}
+          <div id="searchresults">{SearchResultCount} results for {SearchQuery}</div>
+        {/block:SearchResults}
 
-        <div class="pure-g">
+        {block:NoSearchResults}
+          <div id="searchresults">No search results for {SearchQuery}</div>
+        {/block:NoSearchResults}
+      {/block:SearchPage}
+
+      <div class="pure-g">
 
 
-          {block:Posts}
-          <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-            <div class="post" href="{Permalink}">
-              {block:Photo}
-              <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
-              {block:Caption}
-              <div class="copy">{Caption}</div>{/block:Caption} {/block:Photo} {block:Video}
-              <div class="media">{Video-500}</div>
-              {block:Caption}
-              <div class="copy">{Caption}</div>{/block:Caption} {/block:Video} {block:Audio} {block:AlbumArt}
+      {block:Posts}
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+        <div class="post" href="{Permalink}">
+          {block:Photo}
+            <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+            {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+          {/block:Photo}
+          {block:Video}
+            <div class="media">{Video-500}</div>
+            {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+          {/block:Video}
+          {block:Audio}
+            {block:AlbumArt}
               <div class="album_art">
                 <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" style="margin-bottom:10px;" />
               </div>
-              {/block:AlbumArt}
-              <div class="audio">
-                <div class="player">{AudioPlayerWhite}</div>
-                <div class="meta">{PlayCountWithLabel}{block:ExternalAudio}<span class="download_external_audio"> &bull; <a href="{ExternalAudioURL}">{lang:Download}</a></span>{/block:ExternalAudio}</div>
-                <div class="clear"></div>
-              </div>
+            {/block:AlbumArt}
+            <div class="audio">
+              <div class="player">{AudioPlayerWhite}</div>
+              <div class="meta">{PlayCountWithLabel}{block:ExternalAudio}<span class="download_external_audio"> &bull; <a href="{ExternalAudioURL}">{lang:Download}</a></span>{/block:ExternalAudio}</div>
               <div class="clear"></div>
-              {block:Caption}
-              <div class="copy">{Caption}</div>{/block:Caption} {/block:Audio} {block:Quote}
-              <div class="quote {Length}">{Quote}</div>
-              <div class="copy">
-                <div class="quotebg">“</div>
-                {block:Source}
+            </div>
+            <div class="clear"></div>
+            {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+          {/block:Audio}
+          {block:Quote}
+            <div class="quote {Length}">{Quote}</div>
+            <div class="copy">
+              <div class="quotebg">“</div>
+              {block:Source}
                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
                     <td valign="top" style="width:20px;">&mdash;</td>
@@ -351,102 +359,86 @@
                     </td>
                   </tr>
                 </table>
-                {/block:Source}
-              </div>
-              {/block:Quote} {block:Text}
-              <a href="{Permalink}" class="cont-link">
-                <div class="cont">{FakeBody}</div>
-              </a>
-              {block:Title}
+              {/block:Source}
+            </div>
+          {/block:Quote}
+          {block:Text}
+            <a href="{Permalink}" class="cont-link">
+              <div class="cont">{FakeBody}</div>
+            </a>
+            {block:Title}
               <div class="title">
                 <a href="{Permalink}">
                   {Title}
                 </a>
               </div>
-              {/block:Title} {/block:Text} {block:Answer}
-              <div class="question">
-                <div class="nipple"></div>
-                {Question}
-              </div>
-              <div class="asker_container"><img src="{AskerPortraitURL-24}">{Asker}</div>
-              <div class="copy">{Answer}</div>
-              {/block:Answer} {block:Chat} {block:Title}
-              <div class="title">{Title}</div>{/block:Title}
-              <div class="chat">
-                <div class="lines">
-                  {block:Lines}
+            {/block:Title}
+          {/block:Text}
+          {block:Answer}
+            <div class="question">
+              <div class="nipple"></div>
+              {Question}
+            </div>
+            <div class="asker_container"><img src="{AskerPortraitURL-24}">{Asker}</div>
+            <div class="copy">{Answer}</div>
+          {/block:Answer}
+          {block:Chat}
+            {block:Title}<div class="title">{Title}</div>{/block:Title}
+            <div class="chat">
+              <div class="lines">
+                {block:Lines}
                   <div class="line {Alt}">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>
-                  {/block:Lines}
-                </div>
+                {/block:Lines}
               </div>
-              <div class="clear"></div>
-              <div style="height:10px;"></div>
-              {/block:Chat} {block:Link}
-              <div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a>
-              </div>
-              {block:Description}
-              <div class="copy">{Description}</div>{/block:Description} {/block:Link}
-              <a class="stats" href="{Permalink}">
-                <span class="date">
+            </div>
+            <div class="clear"></div>
+            <div style="height:10px;"></div>
+          {/block:Chat}
+          {block:Link}
+            <div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a></div>
+            {block:Description}<div class="copy">{Description}</div>{/block:Description}
+          {/block:Link}
+
+
+        <a class="stats" href="{Permalink}">
+          <span class="date">
             {block:Date} Posted {TimeAgo} {/block:Date}
           </span>
-                <span class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</span>
-              </a>
+          <span class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</span>
+        </a>
 
-              <!--
-          <a href="{Permalink}">
-            <div class="footer for_permalink">
-              <div class="date">
-                {block:Reblog}
-                Reblogged {TimeAgo} from {ReblogParentName}
-                {block:RebloggedFromReblog}(<span style="text-transform:lowercase;">Originally from {ReblogRootName}</span>){/block:RebloggedFromReblog}
-                {/block:Reblog}
-                &nbsp;
-                {block:Date}
-                Posted {TimeAgo} from {source}
-                {/block:Date}
-              </div>
-              <div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</div>
-              <div class="clear"></div>
-            </div>
-          </a>
-
-          <div class="footer {block:ContentSource}with_source_url{/block:ContentSource}" style="
-            display: none;
-            {block:HasTags}display:block;{/block:HasTags}
-            {block:ContentSource}display:block;{/block:ContentSource}
-          ">
-            {block:HasTags}<div class="tags">{lang:Tagged}: {block:Tags}<a href="{TagURL}">{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div>{/block:HasTags}
-
-            {block:ContentSource}
-              <a href="{SourceURL}" class="source_url">
-                {lang:Source}:
-                {SourceTitle}
-              </a>
-            {/block:ContentSource}
-            <div class="clear"></div>
+        <div class="actions">
+          <!-- <a href="{ReblogURL}" target="_blank" class="reblog_button" aria-hidden="true" data-icon="&#x292e;"></a> -->
+          <div class="like-wrap">
+              <span class="icon-love" aria-hidden="true" data-icon="&#x2665;"></span>
+              {LikeButton color="black" size="14"}
           </div>
-           {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes} -->
-            </div>
-          </div>
-          {/block:Posts}
-        </div>
-
-        {block:Pagination}
-        <div class="navigation">
-          {block:PreviousPage}<a href="{PreviousPage}" class="prev">&larr; {lang:Previous}</a>{/block:PreviousPage} {block:NextPage}
-          <a href="{NextPage}" class="next">{lang:Next page} &rarr;</a>{/block:NextPage}
-        </div>
-        {/block:Pagination}
 
       </div>
+
+        </div>
+      </div>
+      {/block:Posts}
+  </div>
+
+    {block:Pagination}
+      <div class="navigation">
+        {block:PreviousPage}<a href="{PreviousPage}" class="prev">&larr; {lang:Previous}</a>{/block:PreviousPage}
+        {block:NextPage}<a href="{NextPage}" class="next">{lang:Next page} &rarr;</a>{/block:NextPage}
+      </div>
+    {/block:Pagination}
 
     </div>
 
   </div>
-  <div class="page-footer">
 
   </div>
+<div class="page-footer">
+
+</div>
+
+<script type="text/javascript" src="theme/scripts/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="theme/scripts/main.js"></script>
 
 </body>
 

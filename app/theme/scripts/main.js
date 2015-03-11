@@ -1,9 +1,8 @@
 $(document).ready(function() {
-  
+
   // Superfluous title animation
-  $('#title').animate({
-    opacity: .5,
-    "margin-left": "+80px"
-  }, 1500);
-  
+  if(Tumblr != undefined) {
+    Tumblr.LikeButton.get_status_by_post_ids(e);
+  }
+
 });
